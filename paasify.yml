@@ -1,0 +1,45 @@
+config:
+
+  # Load extra vars
+  # -----------------
+  # extra_vars:
+  #   - ../vars.extra.yml
+
+  vars:
+    app_domain: devbox.jeznet.org
+    app_expose_ip: 192.168.42.13
+
+    # Determine your application domain
+    # app_domain: devbox.home
+
+    # Default network name for all stacks
+    app_network_name: devbox
+
+sources:
+
+  # Add you sources below
+  - name: default
+    remote: git@github.com:barbu-it/paasify-collection-infra.git
+
+stacks:
+
+  - app: default:traefik
+    tags:
+      - expose_http
+      - expose_admin
+      - traefik-svc
+        #- expose_https
+        #- redirect_http
+
+  - app: default:solr
+    tags:
+      - traefik-svc
+
+  - app: default:node
+    tags:
+      - traefik-svc
+
+  - app: default:php-fpm
+    tags:
+      - traefik-svc
+

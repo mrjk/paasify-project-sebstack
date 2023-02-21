@@ -1,0 +1,12 @@
+# Paasify ignores
+.paasify/_*
+*/*/*
+!*/*conf*/*
+!*/scripts/*
+!*/patch/*
+!*/*.yml
+!*/*.yaml
+
+# Other common tools
+.direnv/*
+.venv/*
