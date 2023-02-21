@@ -6,9 +6,10 @@
 
 This project deploys a devlopper stack with:
 
-    * php-fpm
-    * nodejs
-    * Apache Solr
+* traefik
+* php-fpm
+* nodejs
+* Apache Solr
 
 This is a simple developper stack to create applications
 
@@ -16,8 +17,8 @@ This is a simple developper stack to create applications
 
 To deploy this project, your must first checkout the project with git and go into the directory:
 ```
-git clone GIT_REPO
-cd REPO
+git clone https://github.com/mrjk/paasify-project-sebstack.git sebstack
+cd sebstack
 ```
 
 Download project sources:
@@ -36,27 +37,27 @@ paasify apply
 
 The following requirements must be installed for this project:
 
-    * docker
+* docker
 
 To modify this project:
 
-    * paasify v0.1.2
-    * git
+* paasify v0.1.2
+* git
 
 ### Paasify documentation
 
 Quicklinks:
 
-    * [Paasify Documentation](https://barbu-it.github.io/paasify/)
-    * [Paasify Sources](https://github.com/barbu-it/paasify)
-    * [Paasify Gitter](https://gitter.im/barbu-it/paasify)
+* [Paasify Documentation](https://barbu-it.github.io/paasify/)
+* [Paasify Sources](https://github.com/barbu-it/paasify)
+* [Paasify Gitter](https://gitter.im/barbu-it/paasify)
 
 
 ## Project Informations
 
 Paasify project maintened by:
 
-    * Author: AUTHOR, EMAIL
-    * License: GPLv3
-    * Repository: GIT_REPO
+* Author: AUTHOR, EMAIL
+* License: GPLv3
+* Repository: GIT_REPO
 
